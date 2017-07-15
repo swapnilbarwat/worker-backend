@@ -1,0 +1,6 @@
+name: worker-backend:0.0.1
+deployable: harshals/worker-backend:0.0.1
+
+dependencies:
+  redis: redis
+  postgres: postgres
