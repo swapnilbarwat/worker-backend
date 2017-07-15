@@ -2,7 +2,7 @@ def version = ''
 node {
    stage('checkout') { // for display purposes
       // Get some code from a GitHub repository
-      git 'https://github.com/swapnilbarwat/result-frontend.git'
+      git 'https://github.com/swapnilbarwat/worker-backend.git'
       version = readFile('version').trim()
       currentBuild.displayName = "${version}-${env.BRANCH_NAME}"
       // Get the Maven tool.
